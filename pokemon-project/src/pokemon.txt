@@ -1,0 +1,25 @@
+Pokemon battle
+
+MVP
+
+overview:
+battle simulation between two pokemons
+//changes
+pokemon 1- 
+	2 - attacks
+	hp
+
+pokemon 1 vs pokemon 2
+-turn based
+-Choose attack
+	- probability of hit
+	- probability of pokemon2 retaliate
+	** depending on the type of pokemon it will change the attack probability **
+	
+	
+Tier 1 - story mode + leveling + pokeball
+
+-Trainer class - 6 pokemons
+-Gym class
+-pokeball class - contains pokemon
+
