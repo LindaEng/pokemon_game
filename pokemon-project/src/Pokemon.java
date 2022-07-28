@@ -1,5 +1,5 @@
 public class Pokemon {
-	//This is a Pokemon class
+
 	
 	private Integer HP;
 	private Integer experience;
@@ -13,6 +13,7 @@ public class Pokemon {
 	private String ability;
 	private Integer level;
 	private String[] type;
+	private Boolean isWild;
 	
 	
 	public Pokemon() {
