@@ -1,8 +1,5 @@
 public class Pokemon {
-	
-	public static void main(String[] args) {
-		System.out.println("Testing Again!");
-	}
+	//This is a Pokemon class
 	
 	private Integer HP;
 	private Integer experience;
