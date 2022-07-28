@@ -1,3 +1,5 @@
+import java.util.Set;
+
 public class Pokemon {
 
 	
@@ -56,8 +58,16 @@ public class Pokemon {
 		return speed;
 	}
 	
+	public Boolean getIsWild() {
+		return isWild;
+	}
+	
 	public void setAccuracy(Integer accuracy) {
 		this.accuracy = accuracy;
+	}
+	
+	public void setIsWild(Boolean isWild) {
+		this.isWild = isWild;
 	}
 	
 	public void setAttack(Integer attack) {
