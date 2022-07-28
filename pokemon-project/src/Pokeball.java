@@ -16,6 +16,17 @@ public class Pokeball {
 		this.catchRatio = .65;
 		this.name = "Pokeball";
 		this.hasPokemon = false;
+		this.pokemon = null;
+	}
+	
+	//In case the pokemon comes pre-packaged into the pokeball
+	public Pokeball(Pokemon pokemon) {
+		this.colors.add("Red");
+		this.colors.add("White");
+		this.catchRatio = .65;
+		this.name = "Pokeball";
+		this.hasPokemon = false;
+		this.pokemon = pokemon;
 	}
 	
 	//Getters and Setters
@@ -69,8 +80,43 @@ public class Pokeball {
 	
 	// Methods
 	//Catch Wild Pokemon
+		//In order to catch a pokemon, the pokeball needs to be thrown at a Pokemon
+	//A TRAINER THROWS A POKEBALL SO WE WILL WAIT FOR THE TRAINER TO COMPLETE THIS CLASS
+//	public void throwPokeball(Trainer trainer) {
+//		if(Trainer.hasPokeball()) {
+//			Trainer.setNumPokeball(getNumPokeball() - 1);
+//		}
+//	}
 	//Retrieve Pokemon
+	public void retrieve(Pokemon pokemon) {
+		if(!this.hasPokemon) {
+			this.setPokemon(pokemon);
+			this.setHasPokemon(true);
+		}else {
+			throw new Error("Your pokeball already has a pokemon: " + this.getPokemon().toString());
+		}
+	}
+	
 	//Release Pokemon
+	public void release() {
+		if(this.hasPokemon) {
+			this.setHasPokemon(false);
+			this.setPokemon(null);
+		}else {
+			throw new Error("Your pokeball doesn't have a pokemon to release, it's currently: " + this.getPokemon());;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Pokeball [pokemon=" + pokemon + ", colors=" + colors + ", catchRatio=" + catchRatio + ", name=" + name
+				+ ", hasPokemon=" + hasPokemon + ", getPokemon()=" + getPokemon() + ", getColors()=" + getColors()
+				+ ", getCatchRatio()=" + getCatchRatio() + ", getName()=" + getName() + ", getHasPokemon()="
+				+ getHasPokemon() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+	
+	
 	
 	
 	
