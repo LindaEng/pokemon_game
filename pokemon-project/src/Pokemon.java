@@ -17,6 +17,9 @@ public class Pokemon {
 	private String[] type;
 	private Boolean isWild;
 	private Integer maxHP;
+	private Boolean isPoisoned;
+	private Boolean isSleeping;
+	private Boolean isParalyzed;
 	
 	
 	public Pokemon() {
@@ -67,6 +70,14 @@ public class Pokemon {
 		return maxHP;
 	}
 	
+	public Boolean getIsPoisoned() {
+		return isPoisoned;
+	}
+	
+	public Boolean getIsSleeping() {
+		return isSleeping;
+	}
+	
 	public void setAccuracy(Integer accuracy) {
 		this.accuracy = accuracy;
 	}
@@ -106,6 +117,10 @@ public class Pokemon {
 	public void setSpeed(Integer speed) {
 		this.speed = speed;
 	}
+	
+	public void setIsParalyzed(Boolean isParalyzed) {
+		this.isParalyzed = isParalyzed;
+	}
 
 	public void setAbility(String ability) {
 		this.ability = ability;
@@ -133,6 +148,18 @@ public class Pokemon {
 	
 	public void setMaxHP(Integer maxHP) {
 		this.maxHP = maxHP;
+	}
+	
+	public void setIsPoisoned(Boolean isPoisoned) {
+		this.isPoisoned = isPoisoned;
+	}
+	
+	public void setIsSleeping(Boolean isSleeping) {
+		this.isSleeping = isSleeping;
+	}
+	
+	public Boolean getIsParalyzed() {
+		return this.isParalyzed;
 	}
 
 }

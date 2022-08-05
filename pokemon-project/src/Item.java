@@ -8,7 +8,7 @@ public class Item {
 		this.description = "A general Item";
 	}
 	
-	//getters
+	//getters and test
 	public String getDescription() {
 		return description;
 	}

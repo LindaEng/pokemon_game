@@ -3,7 +3,7 @@ public class ParalyzeHeal extends Item {
 	
 	public ParalyzeHeal() {
 		super();
-		this.description = "Removes Paralysis Status from your Pokemon";
+		this.setDescription("Removes Paralysis Status from your Pokemon");
 				
 	}
 	
@@ -14,7 +14,7 @@ public class ParalyzeHeal extends Item {
 	
 	@Override
 	public void useItem(Pokemon pokemon) {
-		if(pokemon.getIsParalyzed()) {
+		if(pokemon.getIsParalyzed() == true) {
 			pokemon.setIsParalyzed(false);
 		}else {
 			throw new Error("Can only use on pokemon that are paralyzed");

@@ -3,7 +3,7 @@ public class SuperPotion extends Potion {
 
 	public SuperPotion() {
 		super();
-		this.description = "This item will restore 50 HP when used on a Pokemon";
+		this.setDescription("This item will restore 50 HP when used on a Pokemon");
 	}
 	
 	@Override
