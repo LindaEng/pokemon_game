@@ -149,17 +149,17 @@ public class Pokemon {
 	public void setMaxHP(Integer maxHP) {
 		this.maxHP = maxHP;
 	}
-	
+
 	public void setIsPoisoned(Boolean isPoisoned) {
 		this.isPoisoned = isPoisoned;
 	}
 	
-	public void setIsSleeping(Boolean isSleeping) {
-		this.isSleeping = isSleeping;
+	public Boolean getIsParalyzed() {
+		return isParalyzed;
 	}
 	
-	public Boolean getIsParalyzed() {
-		return this.isParalyzed;
+	public void setIsSleeping(Boolean isSleeping) {
+		this.isSleeping = isSleeping;
 	}
 
 }

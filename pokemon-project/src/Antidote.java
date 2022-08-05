@@ -4,6 +4,7 @@ public class Antidote extends Item {
 	public Antidote() {
 		super();
 		this.setDescription("Removes Poison Status from your Pokemon");
+
 				
 	}
 	

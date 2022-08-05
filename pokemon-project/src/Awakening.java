@@ -2,8 +2,8 @@
 public class Awakening extends Item {
 	public Awakening() {
 		super();
-		this.setDescription("Removes Sleep Status from your Pokemon");
-				
+
+		this.setDescription("Removes Sleep Status from your Pokemon");			
 	}
 	
 	@Override
