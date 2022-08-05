@@ -1,9 +1,14 @@
 public class Move {
 	private String type;
 	private Integer attack;
+	private String name;
 	
 	public Move() {
-
+		this.name = "generic move";
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public String getType() {
@@ -20,6 +25,10 @@ public class Move {
 	
 	public void setAttack(Integer attack) {
 		this.attack = attack;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override

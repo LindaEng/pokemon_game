@@ -4,6 +4,11 @@ public class FireSpin extends Move{
 		super();
 		this.setType("Fire");
 		this.setAttack(50);
+		this.setName("FireSpin");
+	}
+	
+	public String getName() {
+		return super.getName();
 	}
 
 	@Override

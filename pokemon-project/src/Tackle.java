@@ -3,6 +3,11 @@ public class Tackle extends Move {
 		super();
 		this.setType("normal");
 		this.setAttack(40);
+		this.setName("Tackle");
+	}
+	
+	public String getName() {
+		return super.getName();
 	}
 
 	@Override

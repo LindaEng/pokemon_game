@@ -25,19 +25,6 @@ public class Potion extends Item {
 				+ hashCode() + "]";
 	}
 
-	public static void main(String[] args) {
-		Potion testPotion = new Potion();
-		Revive testRevive = new Revive();
-		Pokemon test1Pokemon = new Pokemon();
-		test1Pokemon.setHP(20);
-		test1Pokemon.setMaxHP(50);
-		
-		testRevive.useItem(test1Pokemon);
-		
-		System.out.println(test1Pokemon.getHP());
-		
-		System.out.println(testRevive.getDescription());
-	}
 }
 
 
