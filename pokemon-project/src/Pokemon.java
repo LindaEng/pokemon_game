@@ -16,6 +16,9 @@ public class Pokemon {
 	private Integer level;
 	private String[] type;
 	private Boolean isWild;
+	private Boolean isPoisoned;
+	private Boolean isParalyzed;
+	private Boolean isSleeping;
 	
 	
 	public Pokemon() {
@@ -124,6 +127,30 @@ public class Pokemon {
 	
 	public String[] getType() {
 		return type;
+	}
+	
+	public void setIsPoisoned(Boolean isPoisoned) {
+		this.isPoisoned = isPoisoned;
+	}
+	
+	public Boolean getIsPoisoned() {
+		return isPoisoned;
+	}
+	
+	public void setIsParalyzed(Boolean isParalyzed) {
+		this.isParalyzed = isParalyzed;
+	}
+	
+	public Boolean getIsParalyzed() {
+		return isParalyzed;
+	}
+	
+	public Boolean getIsSleeping() {
+		return isSleeping;
+	}
+	
+	public void setIsSleeping(Boolean isSleeping) {
+		this.isSleeping = isSleeping;
 	}
 
 }

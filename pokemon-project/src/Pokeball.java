@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Pokeball {
+public class Pokeball extends Item{
 
 	//Properties: 
 	private Pokemon pokemon;
