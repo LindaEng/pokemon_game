@@ -1,31 +1,31 @@
 import java.util.ArrayList;
 
 public class Pokeball {
-	
+
 	//Properties: 
 	private Pokemon pokemon;
 	private ArrayList<String> colors;
 	private Double catchRatio;
 	private String name;
 	private Boolean hasPokemon;
+	public Integer whatever = 0;
 	
 	//Constructor (Initializes Default Values)
 	public Pokeball() {
-		this.colors.add("Red");
-		this.colors.add("White");
-		this.catchRatio = .65;
-		this.name = "Pokeball";
-		this.hasPokemon = false;
-		this.pokemon = null;
+		colors.add("Red");
+		colors.add("White");
+		catchRatio = .65;
+		name = "Pokeball";
+		hasPokemon = false;
 	}
 	
-	//In case the pokemon comes pre-packaged into the pokeball
+	
 	public Pokeball(Pokemon pokemon) {
-		this.colors.add("Red");
-		this.colors.add("White");
-		this.catchRatio = .65;
-		this.name = "Pokeball";
-		this.hasPokemon = false;
+		colors.add("Red");
+		colors.add("White");
+		catchRatio = .65;
+		name = "Pokeball";
+		hasPokemon = false;
 		this.pokemon = pokemon;
 	}
 	
@@ -50,13 +50,13 @@ public class Pokeball {
 		return hasPokemon;
 	}
 	
-	// Prints each color as opposed to returning an arraylist of the colors. 
+
 	public void checkColors() {
 		for(String color : colors) {
 			System.out.println(color);
 		}
 	}
-	// End of Prints each color as opposed to returning an arraylist of the colors. 
+ 
 	
 	public void setCatchRatio(double catchRatio) {
 		this.catchRatio = catchRatio;
@@ -78,16 +78,7 @@ public class Pokeball {
 		this.hasPokemon = hasPokemon;
 	}
 	
-	// Methods
-	//Catch Wild Pokemon
-		//In order to catch a pokemon, the pokeball needs to be thrown at a Pokemon
-	//A TRAINER THROWS A POKEBALL SO WE WILL WAIT FOR THE TRAINER TO COMPLETE THIS CLASS
-//	public void throwPokeball(Trainer trainer) {
-//		if(Trainer.hasPokeball()) {
-//			Trainer.setNumPokeball(getNumPokeball() - 1);
-//		}
-//	}
-	//Retrieve Pokemon
+
 	public void retrieve(Pokemon pokemon) {
 		if(!this.hasPokemon) {
 			this.setPokemon(pokemon);
@@ -97,13 +88,13 @@ public class Pokeball {
 		}
 	}
 	
-	//Release Pokemon
+
 	public void release() {
 		if(this.hasPokemon) {
 			this.setHasPokemon(false);
 			this.setPokemon(null);
 		}else {
-			throw new Error("Your pokeball doesn't have a pokemon to release, it's currently: " + this.getPokemon());;
+			throw new Error("Your pokeball doesn't have a pokemon to release, it's currently: " + this.getPokemon());
 		}
 	}
 
@@ -115,9 +106,6 @@ public class Pokeball {
 				+ getHasPokemon() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
 				+ super.toString() + "]";
 	}
-	
-	
-	
 	
 	
 }
