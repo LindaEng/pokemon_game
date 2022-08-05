@@ -8,6 +8,7 @@ public class Pokeball {
 	private Double catchRatio;
 	private String name;
 	private Boolean hasPokemon;
+	public String test;
 	
 	
 	//Constructor (Initializes Default Values)
