@@ -1,4 +1,3 @@
-
 public class Move {
 	private String type;
 	private Integer attack;

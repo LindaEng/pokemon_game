@@ -16,6 +16,7 @@ public class Pokemon {
 	private Integer level;
 	private String[] type;
 	private Boolean isWild;
+	private Integer maxHP;
 	
 	
 	public Pokemon() {
@@ -60,6 +61,10 @@ public class Pokemon {
 	
 	public Boolean getIsWild() {
 		return isWild;
+	}
+	
+	public Integer getMaxHP() {
+		return maxHP;
 	}
 	
 	public void setAccuracy(Integer accuracy) {
@@ -124,6 +129,10 @@ public class Pokemon {
 	
 	public String[] getType() {
 		return type;
+	}
+	
+	public void setMaxHP(Integer maxHP) {
+		this.maxHP = maxHP;
 	}
 
 }
