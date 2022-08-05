@@ -18,6 +18,7 @@ public class Pokemon {
 	private Boolean isWild;
 	private Boolean isPoisoned;
 	private Boolean isParalyzed;
+	private Boolean isSleeping;
 	
 	
 	public Pokemon() {
@@ -142,6 +143,14 @@ public class Pokemon {
 	
 	public Boolean getIsParalyzed() {
 		return isParalyzed;
+	}
+	
+	public Boolean getIsSleeping() {
+		return isSleeping;
+	}
+	
+	public void setIsSleeping(Boolean isSleeping) {
+		this.isSleeping = isSleeping;
 	}
 
 }
