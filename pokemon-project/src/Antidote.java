@@ -24,5 +24,9 @@ public class Antidote extends Item {
 	
 	
 	//Please add the To String Method for this class on your end (I don't have the data I need here)
-	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 }
