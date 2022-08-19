@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Set;
 
 public class Pokemon {
@@ -26,6 +27,10 @@ public class Pokemon {
 	
 	public Pokemon() {
 		
+	}
+	
+	public Pokemon(String name) {
+		this.name = name;
 	}
 	
 	public String getName() {
@@ -56,8 +61,15 @@ public class Pokemon {
 		return moveSet;
 	}
 	
-	public Move getMove(Move move) {
-		return moveSet.get(moveSet.indexOf(move));	
+//	public Move getMove(Move move) {
+//		return moveSet.get(moveSet.indexOf(move));	
+//	}
+	
+	public Move getMove() {
+		Random rand = new Random();
+		Integer upperLimit = this.moveSet.size();
+		Integer randIdx = rand.nextInt(upperLimit);
+		return this.moveSet.get(randIdx);
 	}
 	
 	public Integer getSpecialAttack() {
@@ -192,6 +204,19 @@ public class Pokemon {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public void useMove(Move move, Pokemon pokemon) {
+		Integer attackDamage = move.getAttack();
+		Integer enemyDefense = pokemon.getDefense();
+		
+		Integer trueDamage = Math.round((attackDamage)/(enemyDefense));
+		
+		System.out.println("OPPONENT STATS: " + pokemon.getHP());
+		
+		pokemon.setHP(pokemon.getHP() - trueDamage);
+		System.out.println(trueDamage + " amount of damage to: " + pokemon.getName() + " HP now: " + pokemon.getHP());
+	}
+	
 
 	@Override
 	public String toString() {
